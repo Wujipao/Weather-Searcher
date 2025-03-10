@@ -1,0 +1,118 @@
+body{
+  background-color: rgb(241, 243, 255);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+}
+header{
+  text-align: center;
+}
+
+.headerTitle{
+  font-size: 2em;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin: 0px;
+  padding: 10px;
+  background-color: rgb(4, 0, 255);
+  color: rgb(251, 255, 0);
+}
+span{
+  color: white;
+}
+
+h2{
+  font-family:'Times New Roman', Times, serif;
+}
+
+
+.search{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.search input{
+  border: 2px solid rgb(0, 26, 255);
+  width: 300px;
+  height: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0);
+}
+
+button{
+  padding : 2px;
+  margin-left: 10px;
+  background-color: rgb(40, 40, 255);
+  color: yellow;
+  border-radius: 2px;
+  border-style: none;
+  box-shadow: 2px 2px 2px black;
+  width: 100px;
+  font-size: 1em;
+  height: 50px;
+  cursor: pointer;
+}
+
+.weatherCard{
+  display: flex;
+  align-items: center;
+  border: 2px solid #000000;
+  box-shadow: 5px 5px 5px;
+  padding: 20px;
+  margin: 20px auto;
+  width: fit-content;
+  height: 300px;
+  background-color: #adadad;
+  border-radius: 20px;
+}
+
+.weatherCard .weatherInfo{
+  display: flex;
+  flex-direction: column;
+}
+
+.weatherCard .weatherTable{
+  padding: 10px;
+  margin: 20px;
+  align-items: center;
+}
+
+.weatherCard .weatherTable table{
+  align-items: center;
+  width: 300px;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.weatherCard .weatherTable caption{
+  color: yellow;
+  font-size: 1.5em;
+  font-family: 'Times New Roman', Times, serif;
+  text-shadow: 2px 2px 2px #000000;
+  margin-bottom: 10px;;
+}
+
+.weatherCard .weatherTable th{
+  background-color: #1c58ff;
+  color: rgb(255, 230, 0);
+  padding: 10px;
+  text-align: center;
+}
+
+.weatherCard .weatherTable td{
+  padding: 10px;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+
+.weatherCard .weatherTime{
+  padding: 10px;
+  font-style: italic;
+  color: rgb(0, 38, 255);
+}
+
