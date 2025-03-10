@@ -2,6 +2,7 @@ import {useState, useEffect} from 'react';
 import catarman from './assets/catarman.gif'
 function Weather(){
     const [place, setPlace] = useState('');
+    const [country, setCountry] = useState('');
     const [temperature, setTemperature] = useState(null);
     const [weatherStatus, setWeatherStatus] = useState('');
     const [humidity, setHumidity] = useState(null);
@@ -20,6 +21,7 @@ function Weather(){
 
             if (weatherData.cod === 200) {
                 setPlace(weatherData.name);
+                setCountry(weatherData.sys.country);
                 setTemperature(weatherData.main.temp);
                 setWeatherStatus(weatherData.weather[0].main);
                 setHumidity(weatherData.main.humidity);
@@ -51,6 +53,7 @@ function Weather(){
                         <caption>Weather Update: </caption>
                         <thead>
                             <tr>
+                                <th>Country</th>
                                 <th>Place</th>
                                 <th>Temperature</th>
                                 <th>Weather Status</th>
@@ -59,6 +62,7 @@ function Weather(){
                         </thead>
                         <tbody>
                             <tr>
+                                <td>{country}</td>
                                 <td>{place}</td>
                                 <td>{temperature !== null ?  `${temperature}°C` : ''}</td>
                                 <td>{weatherStatus}</td>
